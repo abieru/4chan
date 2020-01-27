@@ -1,0 +1,12 @@
+body{
+	
+}
+
+@font-face {
+	font-family:'TravelingTypewriter'; 
+	src:url({% static 'core/css/TravelingTypewriter.ttf' %});
+}
+
+.textoPri {
+	font-family: 'TravelingTypewriter';
+}

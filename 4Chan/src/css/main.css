@@ -1,0 +1,12 @@
+body{
+	background: url(../img/backgroundpage.jpg);
+}
+
+@font-face {
+	font-family:'TravelingTypewriter'; 
+	src:url(css/TravelingTypewriter.ttf);
+}
+
+.textoPri {
+	font-family: 'TravelingTypewriter';
+}

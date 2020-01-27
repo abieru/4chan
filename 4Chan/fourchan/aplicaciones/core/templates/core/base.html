@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	{% load static%}
+    <meta charset="utf-8">
+    <meta name="keywords" content="4chan, clem, lazone, etc">
+    <meta name="author" content="Abiel Arcila">
+    <meta name="description" content="4chan pagina para postear cualquier cosa de manera anonima">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+     <!--bootstrap-->
+    <link rel="stylesheet" href="{% static 'core/vendor/css/bootstrap.min.css' %}">
+    <!-- custom css-->
+    <link rel="stylesheet" href="{% static 'core/css/main.css' %}">
+	<link rel="shortcut icon" type="image/x-icon" href="#" />
+	<style>
+		@font-face {
+			font-family:'TravelingTypewriter'; 
+			src:url({% static 'core/css/TravelingTypewriter.ttf' %});
+		}
+	</style>
+    <title>CUANTOMAMAGUEVO</title>
+  </head>
+  <body style="background: url({% static '/core/img/backgroundpage.jpg' %});">
+	
+	
+	  <header class="main-header py-5 bg-image-full" style="background-image: url('{% static 'core/img/papel.jpg' %}');" >
+	    <!--<img class="img-fluid d-block mx-auto" src="http://placehold.it/200x200&text=Logo" alt="">-->
+	    <h1 class="textoPri text-center text-dark py-5 mt-5" ><span class="badge badge-warning">CUANTOMAMAGUEVO.COM</span></h1>
+	    <p class="text-center text-danger"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</i></p>
+	  </header>
+	
+	{% block content %}{% endblock %}
+
+	
+	
+	
+	<script defer src="{% static 'core/js/index.js' %}"></script>
+	<script src="{% static 'core/vendor/jquery/jquery.slim.min.js' %}"></script>
+	<script src="{% static 'core/vendor/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'core/vendor/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+  </body>
+</html>

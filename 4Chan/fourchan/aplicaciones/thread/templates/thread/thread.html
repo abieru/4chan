@@ -1,0 +1,109 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %} 
+	<div class="ml-2 mt-2 mb-2">
+		<div class="row">
+			<div class="col-md-8">	
+				<div class="card border-secondary bg-dark mb-4">
+				  <div class="card-body border-secondary">
+				  	<p class="h5 text-white">
+					  	<i class="text-white">/Autos/</i> 
+					    <span class="badge badge-secondary">Anonymous</span>
+					    | 26/01/20 - 14:37
+					</p>
+				  	<div class="row">
+				  		<div class="col-md-12">
+				  			<div class="d-inline-flex p-2 bd-highlight">
+				  				<img class="img-fluid" src="{% static 'core/img/csgo.jpg' %}" alt="" width="50%">
+				  				<p class="ml-2 text-white">
+				  					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									<button class="">Reply</button>
+				  				</p>
+
+				  			</div>	
+				  		</div>
+				  	</div>
+				    <blockquote class="blockquote mb-0">
+				      <footer class="blockquote-footer"><a href="#" class="text-secondary"><span class="badge badge-secondary py-auto">+</span> Mirar thread</a></footer>
+				    </blockquote>
+				  </div>
+				</div>
+				<div class="card border-secondary bg-dark">
+				  <div class="card-body border-secondary">
+				  	<p class="h5 text-white">
+					  	<i class="text-white">/Autos/</i> 
+					    <span class="badge badge-secondary">Anonymous</span>
+					    | 26/01/20 - 14:37
+					</p>
+				  	<div class="row">
+				  		<div class="col-md-12">
+				  			<div class="d-inline-flex p-2 bd-highlight">
+				  				<img class="img-fluid" src="{% static 'core/img/csgo.jpg' %}" alt="" width="50%">
+				  				<p class="ml-2 text-white">
+				  					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+									<button class="">Reply</button>
+				  				</p>
+
+				  			</div>	
+				  		</div>
+				  	</div>
+				    <blockquote class="blockquote mb-0">
+				      <footer class="blockquote-footer"><a href="#" class="text-secondary"><span class="badge badge-secondary py-auto">+</span> Mirar thread</a></footer>
+				    </blockquote>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<hr class="bg-light">
+				<h1 class="text-center text-light textoPri">Categorias</h1>
+				<div class="container text-center">
+					<a href="#">[ Categoria 1 ]</a> |
+					<a href="#">[ Categoria 2 ]</a> |
+					<a href="#">[ Categoria 3 ]</a>					
+				</div>
+	
+				<hr class="bg-light">
+				<h1 class="text-center text-white textoPri">Postear</h1>
+				<form class="text-white">
+				  <div class="form-group">
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="anonymous" aria-describedby="emailHelp">
+				    <small id="emailHelp" class="form-text">Mrc cuidao con lo q pones...</small>
+				  </div>
+					<div class="dropdown">
+					  <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Categoria
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item" href="#">Categoria 1</a>
+					    <a class="dropdown-item" href="#">Another action</a>
+					    <a class="dropdown-item" href="#">Something else here</a>
+					  </div>
+					</div>
+					<form>
+					  <div class="form-group mt-2">
+					    <label for="exampleFormControlFile1">Seleccion un archivo a subir</label>
+					    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+					  </div>
+					</form>	
+				    <div class="form-group">
+					    <textarea class="form-control mt-2" id="exampleFormControlTextarea1" placeholder="Escribe algo" rows="3"></textarea>
+					 </div>
+				  <button type="submit" class="">Post</button>
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock %}
