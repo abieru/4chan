@@ -13,7 +13,11 @@ class ThreadView(CreateView):
 	template_name = "thread/thread.html"
 	form_class = PostForm
 	success_url = reverse_lazy('thread')
-
+	post1 = Post.objects.all()
+	http_method_names = ['post']
+	if http_method_names('c1'):
+		categoria1 = http_method_names.get('c1')
+		post1 = post.filter(categories__gte="1")
 	def get_context_data(self, **kwargs):
 		return dict(super(ThreadView, self).get_context_data(**kwargs), context=Post.objects.all()[0:100])
 
@@ -38,5 +42,8 @@ class CategoryView(CreateView):
 	form_class = PostForm
 	success_url = reverse_lazy('categoria')
 
+ #creo que si cambio el fiel de name por un foregkey creo q puedo buscar por el id
 	def get_context_data(self, **kwargs):
-		return dict(super(CategoryView, self).get_context_data(**kwargs), context=Post.objects.all()[0:100])
+
+		#quiero hacer un if de un post request pero para eso tengo q crear unos botones con ese metodo
+		return dict(super(CategoryView, self).get_context_data(**kwargs), context=Post.objects.filter(name__gte="1")[0:100])

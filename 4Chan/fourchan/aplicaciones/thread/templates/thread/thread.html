@@ -39,9 +39,14 @@
 				<hr class="bg-light">
 				<h1 class="text-center text-light textoPri">Categorias</h1>
 				<div class="container text-center">
-					<a href="#">[ Categoria 1 ]</a> |
-					<a href="#">[ Categoria 2 ]</a> |
-					<a href="#">[ Categoria 3 ]</a>					
+					<form action="/" method="POST">
+						Edad mínima: 
+						<input type="submit" name="c1" value="Categoria 1">
+						<input type="submit" name="c2" value="Categoria 2">
+						<input type="submit" name="c3" value="Categoria 3">
+						{% csrf_token %}
+					</form>
+				
 				</div>
 	
 				<hr class="bg-light">

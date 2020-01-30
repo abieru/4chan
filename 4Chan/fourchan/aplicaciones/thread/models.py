@@ -3,6 +3,7 @@ from django.utils.timezone import now
 # Create your models here.
 
 class Category(models.Model):
+
 	name = models.CharField(max_length=100, verbose_name="Nombre")
 	created = models.DateTimeField(auto_now_add=True, verbose_name="fecha de creación")
 	updated = models.DateTimeField(auto_now=True, verbose_name="fecha de edición")
